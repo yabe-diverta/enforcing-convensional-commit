@@ -5,5 +5,10 @@ set -e
 chmod -R a+rwx $(pwd)/.git
 mkdir -p "$(pwd)/.git/hooks"
 
-curl -s https://raw.githubusercontent.com/yabe-diverta/enforcing-convensional-commit/main/git-conventional-commits.json --output $(pwd)/git-conventional-commits.json
-curl -s https://raw.githubusercontent.com/yabe-diverta/enforcing-convensional-commit/main/commit-msg --output $(pwd)/.git/hooks/commit-msg
+if [ ! -f "$(pwd)/git-conventional-commits.json" ]; then
+    curl -s https://raw.githubusercontent.com/yabe-diverta/enforcing-convensional-commit/main/git-conventional-commits.json --output $(pwd)/git-conventional-commits.json
+fi
+
+if [ ! -f "$(pwd)/.git/hooks/commit-msg" ]; then
+    curl -s https://raw.githubusercontent.com/yabe-diverta/enforcing-convensional-commit/main/commit-msg --output $(pwd)/.git/hooks/commit-msg
+fi

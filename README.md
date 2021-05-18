@@ -2,15 +2,15 @@
 
 > a minimum tool for enforcing your repository to hook conventional commits at git commit.
 
-## useage
+## Usage
 
-`npm i enforcing-convensional-commit -D`
+`npm i enforcing-convensional-commit -D && npx -y npm-add-script -k postinstall -v "enforcing-convensional-commit"`
 
-You can enforce developpers to install the git-hook script if you follow the above way at executing general script `npm install`.
-
-Note that if user choose to install a single dependency,  
-the auto-process will not work.
+You can enforce developpers to install the git-hook script if you follow the above way when each users initialize your repository with `npm install`.
 
 Alternatively,  
-you can install the git-hook script by just running sh script directly from web:  
-`source < (curl -s https://raw.githubusercontent.com/yabe-diverta/enforcing-convensional-commit/main/install)`
+if you wish to install the git-hook script just for you,  
+you can install it by npx:  
+`npx enforcing-convensional-commit`  
+or by just running sh script directly from web:  
+`source <(curl -s https://raw.githubusercontent.com/yabe-diverta/enforcing-convensional-commit/main/install)`
