@@ -1,0 +1,20 @@
+{
+  "name": "enforcing-convensional-commit",
+  "version": "1.0.0",
+  "description": "a minimum tool for enforcing your repository to hook conventional commits at git commit.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yabe-diverta/enforcing-convensional-commit.git"
+  },
+  "keywords": [
+    "conventional commits",
+    "git hooks"
+  ],
+  "author": "yabe@diverta.co.jp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yabe-diverta/enforcing-convensional-commit/issues"
+  },
+  "homepage": "https://github.com/yabe-diverta/enforcing-convensional-commit#readme"
+}

@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+set -e
+
 chmod -R a+rwx $(pwd)/.git
 mkdir -p "$(pwd)/.git/hooks"
 
