@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+
+# install subpackages
+if ! command -v git-conventional-commits &> /dev/null
+then
+    npm install --silent -g git-conventional-commits
+    echo "installed subpackage 'git-conventional-commits' to global"
+    exit
+fi
+
+commit_message="$1"
+git-conventional-commits commit-msg-hook "$commit_message"

@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+chmod -R a+rwx $(pwd)/.git
+mkdir -p "$(pwd)/.git/hooks"
+cp git-conventional-commits.json $(pwd)/git-conventional-commits.json
+cp commit-msg $(pwd)/.git/hooks/commit-msg
