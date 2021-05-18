@@ -3,5 +3,5 @@
 chmod -R a+rwx $(pwd)/.git
 mkdir -p "$(pwd)/.git/hooks"
 
-curl https://raw.githubusercontent.com/yabe-diverta/enforcing-convensional-commit/main/git-conventional-commits.json --output $(pwd)/git-conventional-commits.json
-curl https://raw.githubusercontent.com/yabe-diverta/enforcing-convensional-commit/main/commit-msg --output $(pwd)/.git/hooks/commit-msg
+curl -s https://raw.githubusercontent.com/yabe-diverta/enforcing-convensional-commit/main/git-conventional-commits.json --output $(pwd)/git-conventional-commits.json
+curl -s https://raw.githubusercontent.com/yabe-diverta/enforcing-convensional-commit/main/commit-msg --output $(pwd)/.git/hooks/commit-msg
