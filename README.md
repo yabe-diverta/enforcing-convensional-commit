@@ -4,7 +4,7 @@
 
 ## Usage
 
-`npm i enforcing-convensional-commit -D && npx -y npm-add-script -k postinstall -v "enforcing-convensional-commit"`
+`npm i enforcing-convensional-commit -D && npx -y npm-add-script -k postinstall -v "enforcing-convensional-commit" && npx enforcing-convensional-commit`
 
 You can enforce developpers to install the git-hook script if you follow the above way when each users initialize your repository with `npm install`.
 
