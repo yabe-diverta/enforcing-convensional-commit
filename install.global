@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+
+set -e
+
+npm install --silent -g git-conventional-commits
+
+mkdir -p ~/.config/git/hooks
+curl -s https://raw.githubusercontent.com/yabe-diverta/enforcing-convensional-commit/main/commit-msg.global -o ~/.config/git/hooks/commit-msg
+curl -s https://raw.githubusercontent.com/yabe-diverta/enforcing-convensional-commit/main/git-conventional-commits.json -o ~/.config/git/hooks/git-conventional-commits.json
+
+chmod -R a+rwx ~/.config/git
+
+git config --global core.hooksPath ~/.config/git/hooks
