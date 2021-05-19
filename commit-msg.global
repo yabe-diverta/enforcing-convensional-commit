@@ -8,5 +8,10 @@ then
     exit
 fi
 
+conventional_commits_conf_path=$(pwd)/git-conventional-commits.json
+if [ ! -f "$(pwd)/git-conventional-commits.json" ]; then
+    conventional_commits_conf_path=~/.config/git/hooks/git-conventional-commits.json
+fi
+
 commit_message="$1"
-git-conventional-commits commit-msg-hook "$commit_message" -c ~/.config/git/hooks/git-conventional-commits.json
+git-conventional-commits commit-msg-hook "$commit_message" -c $conventional_commits_conf_path
