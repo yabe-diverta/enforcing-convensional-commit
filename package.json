@@ -1,12 +1,15 @@
 {
   "name": "enforcing-convensional-commit",
-  "version": "1.0.11",
+  "version": "1.0.19",
   "description": "a minimum tool for enforcing your repository to hook conventional commits at git commit.",
   "main": "index.js",
-  "bin": "bin.js",
+  "bin": "index.js",
+  "scripts": {
+    "postinstall": "node postinstall.js"
+  },
   "files": [
     "index.js",
-    "bin.js",
+    "postinstall.js",
     "install"
   ],
   "repository": {
