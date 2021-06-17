@@ -1,6 +1,6 @@
 {
   "name": "enforcing-convensional-commit",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "a minimum tool for enforcing your repository to hook conventional commits at git commit.",
   "main": "index.js",
   "bin": "index.js",

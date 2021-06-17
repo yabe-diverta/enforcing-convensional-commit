@@ -5,7 +5,6 @@ if ! command -v git-conventional-commits &> /dev/null
 then
     npm install --silent -g git-conventional-commits
     echo "installed subpackage 'git-conventional-commits' to global"
-    exit
 fi
 
 conventional_commits_conf_path=$(pwd)/git-conventional-commits.json

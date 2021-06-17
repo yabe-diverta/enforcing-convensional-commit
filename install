@@ -12,3 +12,5 @@ fi
 if [ ! -f "$(pwd)/.git/hooks/commit-msg" ]; then
     curl -s https://raw.githubusercontent.com/yabe-diverta/enforcing-convensional-commit/main/commit-msg --output $(pwd)/.git/hooks/commit-msg
 fi
+
+chmod -R a+rwx $(pwd)/.git
